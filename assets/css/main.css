@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "portada";
+  src: url("../fonts/portada.otf") format("opentype"), url("../fonts/portada.ttf") format("ttf");
+}
+@font-face {
+  font-family: "portadabold";
+  src: url("../fonts/portadabold.otf") format("opentype"), url("../fonts/portadabold.ttf") format("ttf");
+}
+html {
+  direction: rtl;
+  font-size: 15px;
+}
+@media (max-width: 1500px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1300px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 13px;
+  }
+}
+html a {
+  text-decoration: none;
+}
+html body header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+}
+html body header nav .header-container .logo {
+  display: block;
+  max-width: 50%;
+}
+@media (min-width: 992px) {
+  html body header nav .header-container .logo {
+    width: 12.5%;
+  }
+}
+html body header nav .header-container .logo img {
+  width: 100%;
+}
+html body header nav .header-container .menu-list .nav-item {
+  margin: auto;
+  padding: 1rem 0;
+}
+html body header nav .header-container .menu-list .nav-item .nav-link {
+  padding: 0;
+  color: black;
+  font-family: "portada", serif;
+  font-size: 1.2rem;
+  display: flex;
+  width: max-content;
+  margin: auto;
+}
+html body header nav .header-container .menu-list .nav-item .nav-link i {
+  align-self: center;
+  font-size: 1rem;
+  margin: 0 5px;
+}
+html body header nav .header-container .menu-list .brown-dropdown {
+  position: initial;
+}
+html body header nav .header-container .menu-list .brown-dropdown .brown-dropdown-div {
+  background-color: #D8A73C;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+@media (min-width: 992px) {
+  html body header nav .header-container .menu-list .brown-dropdown .brown-dropdown-div {
+    position: absolute;
+    left: 0;
+    top: 95%;
+  }
+}
+html body header nav .header-container .menu-list .brown-dropdown .brown-dropdown-div .brown-dropdown-menu .dropdown-item {
+  color: black;
+  font-family: "portadabold", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+html body header nav .header-container .search-form {
+  padding: 1rem 0;
+}
+@media (min-width: 992px) {
+  html body header nav .header-container .search-form {
+    padding: 0 2rem;
+  }
+}
+html body header nav .header-container .search-form .input-search,
+html body header nav .header-container .search-form .btn-search {
+  border: 0.15rem solid #D8A73C;
+}
+html body header nav .header-container .search-form .input-search {
+  padding: 0.7rem 2.5rem;
+  border-radius: 0 100px 100px 0;
+  border-left: none;
+  outline: unset;
+}
+html body header nav .header-container .search-form .input-search::placeholder {
+  width: max-content;
+  font-family: "portada", serif;
+  font-size: 1rem;
+  color: #B9B9B9;
+}
+html body header nav .header-container .search-form .btn-search {
+  border-right: none;
+  border-radius: 100px 0 0 100px;
+  padding: 0.7rem 2.5rem;
+  display: flex;
+}
+html body header nav .header-container .search-form .btn-search i {
+  align-self: center;
+  color: #D8A73C;
+  font-size: 1.2rem;
+}
+html body header nav .header-container .search-form .btn-search:hover {
+  background-color: #D8A73C;
+}
+html body header nav .header-container .search-form .btn-search:hover i {
+  color: white;
+}
+html body header nav .header-container .social-media {
+  padding: 1rem 0;
+}
+@media (min-width: 992px) {
+  html body header nav .header-container .social-media {
+    padding: 0;
+  }
+}
+html body header nav .header-container .social-media .connect {
+  align-self: center;
+  padding: 0.5rem;
+  color: black;
+  font-family: "portada", serif;
+  font-size: 1.2rem;
+  width: max-content;
+}
+html body header nav .header-container .social-media a {
+  align-self: center;
+  padding: 0.5rem;
+  display: block;
+}
+html body header nav .header-container .social-media a i {
+  color: black;
+  font-size: 1.2rem;
+}
+html body header.fixed {
+  position: fixed;
+}
+html body main .banner .home-page-swiper .swiper-content {
+  position: relative;
+}
+html body main .banner .home-page-swiper .swiper-content video {
+  width: 100%;
+}
+html body main .banner .home-page-swiper .swiper-content .banner-svg {
+  position: absolute;
+  left: 10.5%;
+  top: 27%;
+}

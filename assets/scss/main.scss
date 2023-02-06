@@ -1,0 +1,200 @@
+@import '_fonts.scss';
+$brown:#D8A73C;
+
+html {
+    direction: rtl;
+    font-size: 15px;
+
+    @media (max-width:1500px) {
+        font-size: 13px;
+    }
+
+    @media (max-width:1300px) {
+        font-size: 11px;
+    }
+
+    @media (max-width:991px) {
+        font-size: 13px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    body {
+        header {
+            box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            z-index: 5;
+            background-color: white;
+
+            nav {
+                .header-container {
+                    .logo {
+                        display: block;
+                        max-width: 50%;
+
+                        @media (min-width: 992px) {
+                            width: 12.5%;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .menu-list {
+                        .nav-item {
+                            margin: auto;
+                            padding: 1rem 0;
+
+                            .nav-link {
+                                padding: 0;
+                                color: black;
+                                font-family: $portada;
+                                font-size: 1.2rem;
+                                display: flex;
+                                width: max-content;
+                                margin: auto;
+
+                                i {
+                                    align-self: center;
+                                    font-size: 1rem;
+                                    margin: 0 5px;
+                                }
+                            }
+                        }
+
+                        .brown-dropdown {
+                            position: initial;
+
+                            .brown-dropdown-div {
+                                background-color: $brown;
+                                width: 100%;
+                                border: none;
+                                border-radius: 0;
+
+                                @media (min-width: 992px) {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 95%;
+                                }
+
+                                .brown-dropdown-menu {
+                                    .dropdown-item {
+                                        color: black;
+                                        font-family: $portadabold;
+                                        font-size: 1.2rem;
+                                        text-align: center;
+                                        padding: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .search-form {
+                        padding: 1rem 0;
+
+                        @media (min-width: 992px) {
+                            padding: 0 2rem;
+                        }
+
+                        .input-search,
+                        .btn-search {
+                            border: .15rem solid $brown;
+                        }
+
+                        .input-search {
+                            padding: .7rem 2.5rem;
+                            border-radius: 0 100px 100px 0;
+                            border-left: none;
+                            outline: unset;
+
+                            &::placeholder {
+                                width: max-content;
+                                font-family: $portada;
+                                font-size: 1rem;
+                                color: #B9B9B9;
+                            }
+                        }
+
+                        .btn-search {
+                            border-right: none;
+                            border-radius: 100px 0 0 100px;
+                            padding: .7rem 2.5rem;
+                            display: flex;
+
+                            i {
+                                align-self: center;
+                                color: $brown;
+                                font-size: 1.2rem;
+                            }
+
+                            &:hover {
+                                background-color: $brown;
+
+                                i {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+
+                    .social-media {
+                        padding: 1rem 0;
+
+                        @media (min-width: 992px) {
+                            padding: 0;
+                        }
+
+                        .connect {
+                            align-self: center;
+                            padding: .5rem;
+                            color: black;
+                            font-family: $portada;
+                            font-size: 1.2rem;
+                            width: max-content;
+                        }
+
+                        a {
+                            align-self: center;
+                            padding: .5rem;
+                            display: block;
+
+                            i {
+                                color: black;
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        header.fixed {
+            position: fixed;
+        }
+
+        main {
+            .banner {
+                .home-page-swiper {
+                    .swiper-content {
+                        position: relative;
+                        video {
+                            width: 100%;
+                        }
+                        .banner-svg{
+                            position: absolute;
+                            left: 10.5%;
+                            top: 27%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

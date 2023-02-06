@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/lib/bootstrap5/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/lib/fontawesome5/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/lib/swiperjs/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Wissam</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="header-container container-fluid">
+          <a class="navbar-brand logo" href="#">
+            <img src="./assets/images/logo.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="menu-list navbar-nav flex-grow-1 p-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li
+                class="nav-item brown-dropdown"
+                data-bs-toggle="collapse"
+                href="#submenu-collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="submenu-collapse"
+              >
+                <a class="nav-link" href="#">
+                  عن فضيلة الشيخ
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="collapse brown-dropdown-div" id="submenu-collapse">
+                  <ul
+                    class="navbar-nav brown-dropdown-menu justify-content-center p-0"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >فضيلة العلامة الشيخ محمد عوامة</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >الدكتور الشيخ أحمد عوامة</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >الدكتور محيي الدين عوامة</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">شهادة علماء عصره فيه</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">
+                  المكتبة
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">
+                  الأنشطة
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">
+                  المؤسسات الشريكة
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+            </ul>
+            <form class="search-form d-flex justify-content-center">
+              <input
+                class="input-search"
+                type="search"
+                placeholder="ما الموضوع الذي تريد البحث عنه؟"
+                aria-label="ما الموضوع الذي تريد البحث عنه؟"
+              />
+              <button class="btn btn-search" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <div class="social-media d-flex justify-content-center">
+              <span class="connect">تواصل معنا</span>
+              <a href="">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="home-page-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <video poster="./assets/images/banner-homepage.png" controls>
+                  <source src="movie.mp4" type="video/mp4" />
+                </video>
+                <div class="banner-svg">
+                  <img src="./assets/images/banner-content.svg" alt="Content">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <video poster="./assets/images/banner-homepage.png" controls>
+                  <source src="movie.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                <video poster="./assets/images/banner-homepage.png" controls>
+                  <source src="movie.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+          <form class="search-form d-flex justify-content-center">
+            <input
+              class="input-search"
+              type="search"
+              placeholder="ما الموضوع الذي تريد البحث عنه؟"
+              aria-label="ما الموضوع الذي تريد البحث عنه؟"
+            />
+            <button class="btn btn-search" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/lib/swiperjs/swiper-bundle.min.js"></script>
+    <script src="./assets/lib/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

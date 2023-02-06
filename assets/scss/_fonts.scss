@@ -1,0 +1,19 @@
+//  Portada ARA
+
+@font-face {
+    font-family: "portada";
+    src: url("../fonts/portada.otf") format("opentype"), url("../fonts/portada.ttf") format("ttf");
+}
+
+$portada: "portada",
+serif;
+
+// bold
+
+@font-face {
+    font-family: "portadabold";
+    src: url("../fonts/portadabold.otf") format("opentype"), url("../fonts/portadabold.ttf") format("ttf");
+}
+
+$portadabold: "portadabold",
+serif;
