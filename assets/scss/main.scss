@@ -1,5 +1,21 @@
 @import '_fonts.scss';
 $brown:#D8A73C;
+$white:white;
+$grey:#F5F5F5;
+
+@mixin h2Style {
+    font-size: 2rem;
+    text-align: center;
+    font-family: $portadabold;
+    margin-bottom: 3rem;
+}
+
+@mixin p20px {
+    font-family: $portada;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2;
+}
 
 html {
     direction: rtl;
@@ -19,17 +35,19 @@ html {
 
     a {
         text-decoration: none;
+        color: black;
     }
 
     body {
         header {
             box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-            position: absolute;
+            position: relative;
             top: 0%;
             left: 0%;
             width: 100%;
             z-index: 5;
-            background-color: white;
+            background-color: $white;
+
 
             nav {
                 .header-container {
@@ -138,7 +156,7 @@ html {
                                 background-color: $brown;
 
                                 i {
-                                    color: white;
+                                    color: $white;
                                 }
                             }
                         }
@@ -180,17 +198,194 @@ html {
         }
 
         main {
+            padding-top: .3rem;
+
             .banner {
                 .home-page-swiper {
-                    .swiper-content {
+                    @media (max-width:768px) {
+                        background-color: black;
+                    }
+
+                    .swiper-grid {
                         position: relative;
-                        video {
-                            width: 100%;
+                        z-index: 1;
+
+                        .swiper-content {
+                            position: relative;
+                            display: flex;
+
+                            video {
+                                width: 100%;
+                            }
+
+                            .banner-svg {
+                                position: absolute;
+                                left: 12%;
+                                top: 27%;
+                                width: 25%;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
                         }
-                        .banner-svg{
-                            position: absolute;
-                            left: 10.5%;
-                            top: 27%;
+                    }
+
+                    .swiper-tools {
+                        position: absolute;
+                        left: 50%;
+                        bottom: 5%;
+                        transform: translateX(-50%);
+                        z-index: 2;
+                        width: 70%;
+
+                        @media (max-width:768px) {
+                            position: initial;
+                            transform: translateX(0px);
+                            background: black;
+                            width: 100%;
+                            padding: 1rem 0;
+                        }
+
+                        .swiper-pagination {
+                            position: relative;
+
+                            .swiper-pagination-bullet {
+                                background-color: $white;
+                                opacity: 1;
+                            }
+
+                            .swiper-pagination-bullet-active {
+                                background-color: $brown;
+                            }
+                        }
+
+                        .search-form {
+                            margin-bottom: 3rem;
+                            width: 100%;
+
+                            @media (max-width:768px) {
+                                width: 90%;
+                                margin: 0 auto 3rem;
+                            }
+
+                            .input-search {
+                                padding: 1rem 2rem;
+                                flex-grow: 1;
+                                border: .15rem solid $white;
+                                border-left: none;
+                                border-radius: 0 100px 100px 0;
+                                outline: unset;
+                                background: #FFFFFF69 0% 0% no-repeat padding-box;
+                                color: $white;
+                                font-family: $portada;
+
+                                &::placeholder {
+                                    color: #F5F5F5;
+                                    font-family: $portada;
+                                }
+                            }
+
+                            .btn-search {
+                                padding: 1rem 2rem;
+                                border-right: none;
+                                color: $white;
+                                font-family: $portada;
+                                border: .15rem solid $brown;
+                                border-radius: 100px 0 0 100px;
+                                background-color: $brown;
+
+                                @media (min-width:768px) {
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section-2 {
+                background-color: $white;
+
+                .top-img {
+                    width: 100%;
+                    overflow: hidden;
+
+                    img {
+                        transform: translateY(-40%);
+                    }
+                }
+
+                .content {
+                    padding: 4rem 0;
+                    margin: auto;
+
+                    @media (min-width: 992px) {
+                        width: 80%;
+                    }
+
+                    h2 {
+                        @include h2Style();
+                    }
+
+                    p {
+                        @include p20px();
+                    }
+                }
+            }
+
+            .section-3 {
+                background-color: #F6F6F6;
+
+                .libraries {
+                    padding: 4rem 0;
+                    margin: auto;
+
+                    h2 {
+                        @include h2Style();
+                    }
+
+                    @media (min-width: 1400px) {
+                        width: 90%;
+                    }
+
+                    .row-libraries {
+                        .col-library {
+                            margin: 0 auto 2rem;
+
+                            .content-library {
+                                background-color: $white;
+                                border-radius: .8rem;
+                                padding: .8rem;
+                                display: flex;
+                                height: 100%;
+
+                                &:hover {
+                                    background-color: $brown;
+                                }
+
+                                .icon {
+                                    align-self: center;
+                                    width: 40%;
+                                    margin-left: auto;
+                                }
+
+                                .texts {
+                                    width: 55%;
+                                    align-self: center;
+
+                                    h4 {
+                                        font-family: $portadabold;
+                                        color: black;
+                                    }
+
+                                    p {
+                                        font-family: $portadabold;
+                                        margin-bottom: 0;
+                                        color: black;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

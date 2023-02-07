@@ -11,7 +11,9 @@
     });
 
     $(document).ready(function () {
-        $('main').css('margin-top', parseInt($('header').css('height')))
+        if ($(window).scrollTop() > 0) {
+            $('main').css('margin-top', parseInt($('header').css('height')))
+        }
         const homePageSwiper = new Swiper('.home-page-swiper', {
             loop: true,
             pagination: {
