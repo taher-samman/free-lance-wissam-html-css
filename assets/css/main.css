@@ -312,6 +312,7 @@ html body main .section-3 .libraries .row-libraries .col-library .content-librar
   padding: 0.8rem;
   display: flex;
   height: 100%;
+  transition: 0.5s ease-in-out;
 }
 html body main .section-3 .libraries .row-libraries .col-library .content-library:hover {
   background-color: #D8A73C;
@@ -333,4 +334,63 @@ html body main .section-3 .libraries .row-libraries .col-library .content-librar
   font-family: "portadabold", serif;
   margin-bottom: 0;
   color: black;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .swiper-slide {
+  height: unset !important;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+  width: 80%;
+  margin: 0 auto 3rem;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content h3 {
+  font-family: "portada", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-family: "portadabold", serif;
+  margin: auto auto 2rem;
+  width: 70%;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content p {
+  font-family: "portada", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-size: 1rem;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .read-more {
+  margin: 0 -1rem;
+  background-color: #FCFAF5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .read-more i {
+  margin: 0 auto 0 1rem;
+  align-self: center;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .read-more p {
+  font-family: "portada", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-family: "portadabold", serif;
+  margin-bottom: 0;
+  margin-left: auto;
+  align-self: center;
 }

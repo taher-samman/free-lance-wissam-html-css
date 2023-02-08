@@ -17,6 +17,123 @@ $grey:#F5F5F5;
     line-height: 2;
 }
 
+@mixin libraries {
+    .libraries {
+        padding: 4rem 0;
+        margin: auto;
+
+        h2 {
+            @include h2Style();
+        }
+
+        @media (min-width: 1400px) {
+            width: 90%;
+        }
+
+        .row-libraries {
+            .col-library {
+                margin: 0 auto 2rem;
+
+                .content-library {
+                    background-color: $white;
+                    border-radius: .8rem;
+                    padding: .8rem;
+                    display: flex;
+                    height: 100%;
+                    transition: .5s ease-in-out;
+
+                    &:hover {
+                        background-color: $brown;
+                    }
+
+                    .icon {
+                        align-self: center;
+                        width: 40%;
+                        margin-left: auto;
+                    }
+
+                    .texts {
+                        width: 55%;
+                        align-self: center;
+
+                        h4 {
+                            font-family: $portadabold;
+                            color: black;
+                        }
+
+                        p {
+                            font-family: $portadabold;
+                            margin-bottom: 0;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin books {
+    .books-swiper {
+        .books-swiper-grid {
+            .swiper-slide {
+                height: unset !important;
+            }
+
+            .book-content {
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+                background-color: $white;
+                border-radius: 10px;
+                width: 80%;
+                margin: auto;
+                padding: 0 1rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    @include h2Style();
+                    width: 80%;
+                    margin: 0 auto 3rem;
+                }
+
+                h3 {
+                    @include p20px();
+                    font-family: $portadabold;
+                    margin: auto auto 2rem;
+                    width: 70%;
+                }
+
+                p {
+                    @include p20px();
+                    font-size: 1rem;
+                }
+
+                .read-more {
+                    margin: 0 -1rem;
+                    background-color: #FCFAF5;
+                    border-radius: 0 0 10px 10px;
+                    display: flex;
+
+                    i {
+                        margin: 0 auto 0 1rem;
+                        align-self: center
+                    }
+
+                    p {
+                        @include p20px();
+                        font-family: $portadabold;
+                        margin-bottom: 0;
+                        margin-left: auto;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
 html {
     direction: rtl;
     font-size: 15px;
@@ -336,59 +453,8 @@ html {
 
             .section-3 {
                 background-color: #F6F6F6;
-
-                .libraries {
-                    padding: 4rem 0;
-                    margin: auto;
-
-                    h2 {
-                        @include h2Style();
-                    }
-
-                    @media (min-width: 1400px) {
-                        width: 90%;
-                    }
-
-                    .row-libraries {
-                        .col-library {
-                            margin: 0 auto 2rem;
-
-                            .content-library {
-                                background-color: $white;
-                                border-radius: .8rem;
-                                padding: .8rem;
-                                display: flex;
-                                height: 100%;
-
-                                &:hover {
-                                    background-color: $brown;
-                                }
-
-                                .icon {
-                                    align-self: center;
-                                    width: 40%;
-                                    margin-left: auto;
-                                }
-
-                                .texts {
-                                    width: 55%;
-                                    align-self: center;
-
-                                    h4 {
-                                        font-family: $portadabold;
-                                        color: black;
-                                    }
-
-                                    p {
-                                        font-family: $portadabold;
-                                        margin-bottom: 0;
-                                        color: black;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                @include libraries();
+                @include books();
             }
         }
     }
