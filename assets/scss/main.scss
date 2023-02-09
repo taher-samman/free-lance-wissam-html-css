@@ -19,7 +19,7 @@ $grey:#F5F5F5;
 
 @mixin libraries {
     .libraries {
-        padding: 4rem 0;
+        padding-bottom: 4rem;
         margin: auto;
 
         h2 {
@@ -75,58 +75,115 @@ $grey:#F5F5F5;
 
 @mixin books {
     .books-swiper {
+        .book-prev {
+            position: absolute;
+            left: 1%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+        .book-next {
+            position: absolute;
+            right: 1%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
         .books-swiper-grid {
             .swiper-slide {
                 height: unset !important;
             }
 
             .book-content {
-                cursor: pointer;
-                box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-                background-color: $white;
-                border-radius: 10px;
                 width: 80%;
-                margin: auto;
-                padding: 0 1rem;
+                margin: 0 auto;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
+                padding-bottom: 1rem;
 
-                h2 {
-                    @include h2Style();
-                    width: 80%;
-                    margin: 0 auto 3rem;
+                .icon {
+                    display: flex;
+                    position: relative;
+
+                    &::after {
+                        box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px -2px;
+                        display: block;
+                        content: '';
+                        width: 100%;
+                        height: 50%;
+                        position: absolute;
+                        left: 0%;
+                        bottom: 0%;
+                        background-color: $white;
+                        z-index: 0;
+                        border-radius: 10px 10px 0 0;
+                    }
+
+                    img {
+                        position: relative;
+                        z-index: 1;
+                        margin: 0 auto;
+                        max-width: 25%;
+                    }
                 }
 
-                h3 {
-                    @include p20px();
-                    font-family: $portadabold;
-                    margin: auto auto 2rem;
-                    width: 70%;
-                }
-
-                p {
-                    @include p20px();
-                    font-size: 1rem;
-                }
-
-                .read-more {
-                    margin: 0 -1rem;
-                    background-color: #FCFAF5;
+                .book-text {
+                    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px -2px;
+                    flex-grow: 1;
+                    cursor: pointer;
+                    background-color: $white;
                     border-radius: 0 0 10px 10px;
                     display: flex;
+                    flex-direction: column;
+                    padding: 1rem 1rem 0;
 
-                    i {
-                        margin: 0 auto 0 1rem;
-                        align-self: center
+                    h2 {
+                        @include h2Style();
+                        width: 80%;
+                        margin: 0 auto 3rem;
+                    }
+
+                    h3 {
+                        @include p20px();
+                        font-family: $portadabold;
+                        margin: auto auto 2rem;
+                        width: 70%;
                     }
 
                     p {
                         @include p20px();
-                        font-family: $portadabold;
-                        margin-bottom: 0;
-                        margin-left: auto;
-                        align-self: center;
+                        font-size: 1rem;
+                    }
+
+                    .read-more {
+                        margin: 0 -1rem;
+                        background-color: #FCFAF5;
+                        border-radius: 0 0 10px 10px;
+                        display: flex;
+
+                        i {
+                            margin: 0 auto 0 1rem;
+                            align-self: center
+                        }
+
+                        p {
+                            @include p20px();
+                            font-family: $portadabold;
+                            margin-bottom: 0;
+                            margin-left: auto;
+                            align-self: center;
+                        }
                     }
                 }
             }
@@ -153,6 +210,10 @@ html {
     a {
         text-decoration: none;
         color: black;
+    }
+
+    .list-style-none {
+        list-style-type: none;
     }
 
     body {
@@ -452,9 +513,191 @@ html {
             }
 
             .section-3 {
+                padding: 4rem 0;
                 background-color: #F6F6F6;
                 @include libraries();
                 @include books();
+            }
+
+            .section-4 {
+                padding: 4rem 0;
+                background-color: #E9E9E9;
+
+                h2 {
+                    @include h2Style();
+                }
+
+                .col-partner {
+                    margin: auto;
+                    padding: 2rem 0;
+
+                    .partner {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: $brown;
+
+            .container-footer {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+                .footer-logo {
+                    padding-bottom: 2rem;
+                    max-width: 50%;
+
+                    @media (min-width:768px) {
+                        max-width: 30%;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .footer-row {
+                    .col-menus {
+                        ul {
+                            li {
+                                color: $white;
+
+                                a {
+                                    color: $white;
+                                    line-height: 2;
+                                    font-size: 1.2rem;
+                                    font-family: $portada;
+                                }
+                            }
+                        }
+                    }
+
+                    .col-contact {
+                        margin-right: auto;
+
+                        .contact-icon {
+                            text-align: center;
+
+                            img {
+                                max-width: 30%;
+                            }
+
+                            p {
+                                margin: 1rem 0;
+                                color: $white;
+                                font-size: 1rem;
+                                font-family: $portadabold;
+                            }
+                        }
+
+                        .f-c-form {
+                            display: flex;
+                            flex-direction: column;
+
+                            .f-c-email {
+                                margin-bottom: .5rem;
+                                background-color: $white;
+                                border: 1px solid #B9B9B9;
+                                text-align: center;
+                                padding: .5rem 1rem;
+                                border-radius: 100px;
+                                color: $brown;
+                                outline: unset;
+
+                                &::placeholder {
+                                    color: #B9B9B9;
+                                }
+                            }
+
+                            .f-c-submit {
+                                margin: auto;
+                                padding: .5rem 4rem;
+                                border-radius: 100px;
+                                background-color: $white;
+                                border: none;
+                                color: $brown;
+                                font-family: $portadabold;
+                            }
+                        }
+
+                        .social-media {
+                            margin-top: 4rem;
+                            padding: 1rem 0;
+
+                            @media (min-width: 992px) {
+                                padding: 0;
+                            }
+
+                            .connect {
+                                align-self: center;
+                                padding: .5rem;
+                                color: $white;
+                                font-family: $portada;
+                                font-size: 1.2rem;
+                                width: max-content;
+                            }
+
+                            a {
+                                align-self: center;
+                                padding: .5rem;
+                                display: block;
+
+                                i {
+                                    color: $white;
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .terms {
+                background-color: #EECC61;
+
+                p {
+                    @include p20px();
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .book1-modal {
+            .modal-content {
+                .modal-header {
+                    border: none;
+
+                    .btn-close {
+                        margin-left: 0;
+                        margin-right: auto;
+                    }
+                }
+
+                .modal-body {
+                    .row-modal {
+                        .book-img {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .modal-video {
+                            width: 100%;
+
+                            video,
+                            iframe {
+                                width: 100%;
+                                border-radius: 1rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -29,6 +29,9 @@ html a {
   text-decoration: none;
   color: black;
 }
+html .list-style-none {
+  list-style-type: none;
+}
 html body header {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
@@ -286,10 +289,11 @@ html body main .section-2 .content p {
   line-height: 2;
 }
 html body main .section-3 {
+  padding: 4rem 0;
   background-color: #F6F6F6;
 }
 html body main .section-3 .libraries {
-  padding: 4rem 0;
+  padding-bottom: 4rem;
   margin: auto;
 }
 html body main .section-3 .libraries h2 {
@@ -335,22 +339,71 @@ html body main .section-3 .libraries .row-libraries .col-library .content-librar
   margin-bottom: 0;
   color: black;
 }
+html body main .section-3 .books-swiper .book-prev {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+html body main .section-3 .books-swiper .book-prev i {
+  font-size: 1.5rem;
+}
+html body main .section-3 .books-swiper .book-next {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+html body main .section-3 .books-swiper .book-next i {
+  font-size: 1.5rem;
+}
 html body main .section-3 .books-swiper .books-swiper-grid .swiper-slide {
   height: unset !important;
 }
 html body main .section-3 .books-swiper .books-swiper-grid .book-content {
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  background-color: white;
-  border-radius: 10px;
   width: 80%;
-  margin: auto;
-  padding: 0 1rem;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 1rem;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content h2 {
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .icon {
+  display: flex;
+  position: relative;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .icon::after {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  background-color: white;
+  z-index: 0;
+  border-radius: 10px 10px 0 0;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .icon img {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 25%;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
+  flex-grow: 1;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0;
+}
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text h2 {
   font-size: 2rem;
   text-align: center;
   font-family: "portadabold", serif;
@@ -358,7 +411,7 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content h2 {
   width: 80%;
   margin: 0 auto 3rem;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content h3 {
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text h3 {
   font-family: "portada", serif;
   text-align: center;
   font-size: 1.2rem;
@@ -367,24 +420,24 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content h3 {
   margin: auto auto 2rem;
   width: 70%;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content p {
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text p {
   font-family: "portada", serif;
   text-align: center;
   font-size: 1.2rem;
   line-height: 2;
   font-size: 1rem;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .read-more {
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more {
   margin: 0 -1rem;
   background-color: #FCFAF5;
   border-radius: 0 0 10px 10px;
   display: flex;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .read-more i {
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more i {
   margin: 0 auto 0 1rem;
   align-self: center;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .read-more p {
+html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more p {
   font-family: "portada", serif;
   text-align: center;
   font-size: 1.2rem;
@@ -393,4 +446,147 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content .read-m
   margin-bottom: 0;
   margin-left: auto;
   align-self: center;
+}
+html body main .section-4 {
+  padding: 4rem 0;
+  background-color: #E9E9E9;
+}
+html body main .section-4 h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+}
+html body main .section-4 .col-partner {
+  margin: auto;
+  padding: 2rem 0;
+}
+html body main .section-4 .col-partner .partner img {
+  width: 100%;
+}
+html body footer {
+  background-color: #D8A73C;
+}
+html body footer .container-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+html body footer .container-footer .footer-logo {
+  padding-bottom: 2rem;
+  max-width: 50%;
+}
+@media (min-width: 768px) {
+  html body footer .container-footer .footer-logo {
+    max-width: 30%;
+  }
+}
+html body footer .container-footer .footer-logo img {
+  width: 100%;
+}
+html body footer .container-footer .footer-row .col-menus ul li {
+  color: white;
+}
+html body footer .container-footer .footer-row .col-menus ul li a {
+  color: white;
+  line-height: 2;
+  font-size: 1.2rem;
+  font-family: "portada", serif;
+}
+html body footer .container-footer .footer-row .col-contact {
+  margin-right: auto;
+}
+html body footer .container-footer .footer-row .col-contact .contact-icon {
+  text-align: center;
+}
+html body footer .container-footer .footer-row .col-contact .contact-icon img {
+  max-width: 30%;
+}
+html body footer .container-footer .footer-row .col-contact .contact-icon p {
+  margin: 1rem 0;
+  color: white;
+  font-size: 1rem;
+  font-family: "portadabold", serif;
+}
+html body footer .container-footer .footer-row .col-contact .f-c-form {
+  display: flex;
+  flex-direction: column;
+}
+html body footer .container-footer .footer-row .col-contact .f-c-form .f-c-email {
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border: 1px solid #B9B9B9;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  color: #D8A73C;
+  outline: unset;
+}
+html body footer .container-footer .footer-row .col-contact .f-c-form .f-c-email::placeholder {
+  color: #B9B9B9;
+}
+html body footer .container-footer .footer-row .col-contact .f-c-form .f-c-submit {
+  margin: auto;
+  padding: 0.5rem 4rem;
+  border-radius: 100px;
+  background-color: white;
+  border: none;
+  color: #D8A73C;
+  font-family: "portadabold", serif;
+}
+html body footer .container-footer .footer-row .col-contact .social-media {
+  margin-top: 4rem;
+  padding: 1rem 0;
+}
+@media (min-width: 992px) {
+  html body footer .container-footer .footer-row .col-contact .social-media {
+    padding: 0;
+  }
+}
+html body footer .container-footer .footer-row .col-contact .social-media .connect {
+  align-self: center;
+  padding: 0.5rem;
+  color: white;
+  font-family: "portada", serif;
+  font-size: 1.2rem;
+  width: max-content;
+}
+html body footer .container-footer .footer-row .col-contact .social-media a {
+  align-self: center;
+  padding: 0.5rem;
+  display: block;
+}
+html body footer .container-footer .footer-row .col-contact .social-media a i {
+  color: white;
+  font-size: 1.2rem;
+}
+html body footer .terms {
+  background-color: #EECC61;
+}
+html body footer .terms p {
+  font-family: "portada", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+html body .book1-modal .modal-content .modal-header {
+  border: none;
+}
+html body .book1-modal .modal-content .modal-header .btn-close {
+  margin-left: 0;
+  margin-right: auto;
+}
+html body .book1-modal .modal-content .modal-body .row-modal .book-img {
+  width: 100%;
+}
+html body .book1-modal .modal-content .modal-body .row-modal .book-img img {
+  width: 100%;
+}
+html body .book1-modal .modal-content .modal-body .row-modal .modal-video {
+  width: 100%;
+}
+html body .book1-modal .modal-content .modal-body .row-modal .modal-video video,
+html body .book1-modal .modal-content .modal-body .row-modal .modal-video iframe {
+  width: 100%;
+  border-radius: 1rem;
 }
