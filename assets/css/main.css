@@ -163,35 +163,32 @@ html body header nav .header-container .social-media a i {
 html body header.fixed {
   position: fixed;
 }
-html body main {
-  padding-top: 0.3rem;
-}
 @media (max-width: 768px) {
-  html body main .banner .home-page-swiper {
+  html body .main-home .banner .home-page-swiper {
     background-color: black;
   }
 }
-html body main .banner .home-page-swiper .swiper-grid {
+html body .main-home .banner .home-page-swiper .swiper-grid {
   position: relative;
   z-index: 1;
 }
-html body main .banner .home-page-swiper .swiper-grid .swiper-content {
+html body .main-home .banner .home-page-swiper .swiper-grid .swiper-content {
   position: relative;
   display: flex;
 }
-html body main .banner .home-page-swiper .swiper-grid .swiper-content video {
+html body .main-home .banner .home-page-swiper .swiper-grid .swiper-content video {
   width: 100%;
 }
-html body main .banner .home-page-swiper .swiper-grid .swiper-content .banner-svg {
+html body .main-home .banner .home-page-swiper .swiper-grid .swiper-content .banner-svg {
   position: absolute;
   left: 12%;
   top: 27%;
   width: 25%;
 }
-html body main .banner .home-page-swiper .swiper-grid .swiper-content .banner-svg img {
+html body .main-home .banner .home-page-swiper .swiper-grid .swiper-content .banner-svg img {
   width: 100%;
 }
-html body main .banner .home-page-swiper .swiper-tools {
+html body .main-home .banner .home-page-swiper .swiper-tools {
   position: absolute;
   left: 50%;
   bottom: 5%;
@@ -200,7 +197,7 @@ html body main .banner .home-page-swiper .swiper-tools {
   width: 70%;
 }
 @media (max-width: 768px) {
-  html body main .banner .home-page-swiper .swiper-tools {
+  html body .main-home .banner .home-page-swiper .swiper-tools {
     position: initial;
     transform: translateX(0px);
     background: black;
@@ -208,27 +205,27 @@ html body main .banner .home-page-swiper .swiper-tools {
     padding: 1rem 0;
   }
 }
-html body main .banner .home-page-swiper .swiper-tools .swiper-pagination {
+html body .main-home .banner .home-page-swiper .swiper-tools .swiper-pagination {
   position: relative;
 }
-html body main .banner .home-page-swiper .swiper-tools .swiper-pagination .swiper-pagination-bullet {
+html body .main-home .banner .home-page-swiper .swiper-tools .swiper-pagination .swiper-pagination-bullet {
   background-color: white;
   opacity: 1;
 }
-html body main .banner .home-page-swiper .swiper-tools .swiper-pagination .swiper-pagination-bullet-active {
+html body .main-home .banner .home-page-swiper .swiper-tools .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #D8A73C;
 }
-html body main .banner .home-page-swiper .swiper-tools .search-form {
+html body .main-home .banner .home-page-swiper .swiper-tools .search-form {
   margin-bottom: 3rem;
   width: 100%;
 }
 @media (max-width: 768px) {
-  html body main .banner .home-page-swiper .swiper-tools .search-form {
+  html body .main-home .banner .home-page-swiper .swiper-tools .search-form {
     width: 90%;
     margin: 0 auto 3rem;
   }
 }
-html body main .banner .home-page-swiper .swiper-tools .search-form .input-search {
+html body .main-home .banner .home-page-swiper .swiper-tools .search-form .input-search {
   padding: 1rem 2rem;
   flex-grow: 1;
   border: 0.15rem solid white;
@@ -239,11 +236,11 @@ html body main .banner .home-page-swiper .swiper-tools .search-form .input-searc
   color: white;
   font-family: "portada", serif;
 }
-html body main .banner .home-page-swiper .swiper-tools .search-form .input-search::placeholder {
+html body .main-home .banner .home-page-swiper .swiper-tools .search-form .input-search::placeholder {
   color: #F5F5F5;
   font-family: "portada", serif;
 }
-html body main .banner .home-page-swiper .swiper-tools .search-form .btn-search {
+html body .main-home .banner .home-page-swiper .swiper-tools .search-form .btn-search {
   padding: 1rem 2rem;
   border-right: none;
   color: white;
@@ -253,64 +250,64 @@ html body main .banner .home-page-swiper .swiper-tools .search-form .btn-search 
   background-color: #D8A73C;
 }
 @media (min-width: 768px) {
-  html body main .banner .home-page-swiper .swiper-tools .search-form .btn-search {
+  html body .main-home .banner .home-page-swiper .swiper-tools .search-form .btn-search {
     width: 15%;
   }
 }
-html body main .section-2 {
+html body .main-home .section-2 {
   background-color: white;
 }
-html body main .section-2 .top-img {
+html body .main-home .section-2 .top-img {
   width: 100%;
   overflow: hidden;
 }
-html body main .section-2 .top-img img {
+html body .main-home .section-2 .top-img img {
   transform: translateY(-40%);
 }
-html body main .section-2 .content {
+html body .main-home .section-2 .content {
   padding: 4rem 0;
   margin: auto;
 }
 @media (min-width: 992px) {
-  html body main .section-2 .content {
+  html body .main-home .section-2 .content {
     width: 80%;
   }
 }
-html body main .section-2 .content h2 {
+html body .main-home .section-2 .content h2 {
   font-size: 2rem;
   text-align: center;
   font-family: "portadabold", serif;
   margin-bottom: 3rem;
 }
-html body main .section-2 .content p {
+html body .main-home .section-2 .content p {
   font-family: "portada", serif;
   text-align: center;
   font-size: 1.2rem;
   line-height: 2;
 }
-html body main .section-3 {
+html body .main-home .section-3 {
   padding: 4rem 0;
   background-color: #F6F6F6;
 }
-html body main .section-3 .libraries {
+html body .main-home .section-3 .libraries {
   padding-bottom: 4rem;
   margin: auto;
 }
-html body main .section-3 .libraries h2 {
+html body .main-home .section-3 .libraries h2 {
   font-size: 2rem;
   text-align: center;
   font-family: "portadabold", serif;
   margin-bottom: 3rem;
 }
 @media (min-width: 1400px) {
-  html body main .section-3 .libraries {
+  html body .main-home .section-3 .libraries {
     width: 90%;
   }
 }
-html body main .section-3 .libraries .row-libraries .col-library {
+html body .main-home .section-3 .libraries .row-libraries .col-library {
   margin: 0 auto 2rem;
 }
-html body main .section-3 .libraries .row-libraries .col-library .content-library {
+html body .main-home .section-3 .libraries .row-libraries .col-library .content-library {
   background-color: white;
   border-radius: 0.8rem;
   padding: 0.8rem;
@@ -318,51 +315,54 @@ html body main .section-3 .libraries .row-libraries .col-library .content-librar
   height: 100%;
   transition: 0.5s ease-in-out;
 }
-html body main .section-3 .libraries .row-libraries .col-library .content-library:hover {
+html body .main-home .section-3 .libraries .row-libraries .col-library .content-library:hover {
   background-color: #D8A73C;
 }
-html body main .section-3 .libraries .row-libraries .col-library .content-library .icon {
+html body .main-home .section-3 .libraries .row-libraries .col-library .content-library .icon {
   align-self: center;
   width: 40%;
   margin-left: auto;
 }
-html body main .section-3 .libraries .row-libraries .col-library .content-library .texts {
+html body .main-home .section-3 .libraries .row-libraries .col-library .content-library .texts {
   width: 55%;
   align-self: center;
 }
-html body main .section-3 .libraries .row-libraries .col-library .content-library .texts h4 {
+html body .main-home .section-3 .libraries .row-libraries .col-library .content-library .texts h4 {
   font-family: "portadabold", serif;
   color: black;
 }
-html body main .section-3 .libraries .row-libraries .col-library .content-library .texts p {
+html body .main-home .section-3 .libraries .row-libraries .col-library .content-library .texts p {
   font-family: "portadabold", serif;
   margin-bottom: 0;
   color: black;
 }
-html body main .section-3 .books-swiper .book-prev {
+html body .main-home .section-3 .libraries .row-libraries .col-library .active {
+  background-color: #D8A73C;
+}
+html body .main-home .section-3 .books-swiper .book-prev {
   position: absolute;
   left: 1%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 5;
 }
-html body main .section-3 .books-swiper .book-prev i {
+html body .main-home .section-3 .books-swiper .book-prev i {
   font-size: 1.5rem;
 }
-html body main .section-3 .books-swiper .book-next {
+html body .main-home .section-3 .books-swiper .book-next {
   position: absolute;
   right: 1%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 5;
 }
-html body main .section-3 .books-swiper .book-next i {
+html body .main-home .section-3 .books-swiper .book-next i {
   font-size: 1.5rem;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .swiper-slide {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .swiper-slide {
   height: unset !important;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content {
   width: 80%;
   margin: 0 auto;
   height: 100%;
@@ -370,11 +370,11 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content {
   flex-direction: column;
   padding-bottom: 1rem;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .icon {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .icon {
   display: flex;
   position: relative;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .icon::after {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .icon::after {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
   display: block;
   content: "";
@@ -387,13 +387,13 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content .icon::
   z-index: 0;
   border-radius: 10px 10px 0 0;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .icon img {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .icon img {
   position: relative;
   z-index: 1;
   margin: 0 auto;
   max-width: 25%;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .book-text {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
   flex-grow: 1;
   cursor: pointer;
@@ -403,7 +403,7 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-t
   flex-direction: column;
   padding: 1rem 1rem 0;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text h2 {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .book-text h2 {
   font-size: 2rem;
   text-align: center;
   font-family: "portadabold", serif;
@@ -411,7 +411,7 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-t
   width: 80%;
   margin: 0 auto 3rem;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text h3 {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .book-text h3 {
   font-family: "portada", serif;
   text-align: center;
   font-size: 1.2rem;
@@ -420,24 +420,24 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-t
   margin: auto auto 2rem;
   width: 70%;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text p {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .book-text p {
   font-family: "portada", serif;
   text-align: center;
   font-size: 1.2rem;
   line-height: 2;
   font-size: 1rem;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more {
   margin: 0 -1rem;
   background-color: #FCFAF5;
   border-radius: 0 0 10px 10px;
   display: flex;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more i {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more i {
   margin: 0 auto 0 1rem;
   align-self: center;
 }
-html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more p {
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .book-text .read-more p {
   font-family: "portada", serif;
   text-align: center;
   font-size: 1.2rem;
@@ -447,22 +447,443 @@ html body main .section-3 .books-swiper .books-swiper-grid .book-content .book-t
   margin-left: auto;
   align-self: center;
 }
-html body main .section-4 {
+html body .main-home .section-4 {
   padding: 4rem 0;
   background-color: #E9E9E9;
 }
-html body main .section-4 h2 {
+html body .main-home .section-4 h2 {
   font-size: 2rem;
   text-align: center;
   font-family: "portadabold", serif;
   margin-bottom: 3rem;
 }
-html body main .section-4 .col-partner {
+html body .main-home .section-4 .col-partner {
   margin: auto;
   padding: 2rem 0;
 }
-html body main .section-4 .col-partner .partner img {
+html body .main-home .section-4 .col-partner .partner img {
   width: 100%;
+}
+html body .main-libraries .banner-libraries {
+  position: relative;
+}
+html body .main-libraries .banner-libraries .menu {
+  padding: 1rem 0;
+}
+html body .main-libraries .banner-libraries .menu .libraries {
+  padding-bottom: 4rem;
+  margin: auto;
+}
+html body .main-libraries .banner-libraries .menu .libraries h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+}
+@media (min-width: 1400px) {
+  html body .main-libraries .banner-libraries .menu .libraries {
+    width: 90%;
+  }
+}
+html body .main-libraries .banner-libraries .menu .libraries .row-libraries .col-library {
+  margin: 0 auto 2rem;
+}
+html body .main-libraries .banner-libraries .menu .libraries .row-libraries .col-library .content-library {
+  background-color: white;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  display: flex;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+html body .main-libraries .banner-libraries .menu .libraries .row-libraries .col-library .content-library:hover {
+  background-color: #D8A73C;
+}
+html body .main-libraries .banner-libraries .menu .libraries .row-libraries .col-library .content-library .icon {
+  align-self: center;
+  width: 40%;
+  margin-left: auto;
+}
+html body .main-libraries .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts {
+  width: 55%;
+  align-self: center;
+}
+html body .main-libraries .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts h4 {
+  font-family: "portadabold", serif;
+  color: black;
+}
+html body .main-libraries .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts p {
+  font-family: "portadabold", serif;
+  margin-bottom: 0;
+  color: black;
+}
+html body .main-libraries .banner-libraries .menu .libraries .row-libraries .col-library .active {
+  background-color: #D8A73C;
+}
+html body .main-libraries .banner-libraries .menu .libraries {
+  padding-bottom: 0;
+}
+html body .main-libraries .banner-libraries .libraries-banner .banner-img img {
+  width: 100%;
+}
+html body .main-libraries .banner-libraries .background-section {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+html body .main-libraries .banner-libraries .background-section .background {
+  width: 100%;
+  height: 100%;
+}
+html body .main-libraries .banner-libraries .background-section .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body .main-libraries .section-1 {
+  padding: 1rem 0;
+}
+html body .main-libraries .section-1 .top-img img {
+  width: 100%;
+}
+html body .main-libraries .section-1 .content {
+  padding: 2rem 0;
+}
+html body .main-libraries .section-1 .content h1 {
+  font-family: "portadabold", serif;
+  text-align: center;
+}
+html body .main-libraries .section-1 .content .books {
+  padding: 2rem 0;
+}
+html body .main-libraries .section-1 .content .books h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+  text-align: start;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .book-prev {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .book-prev i {
+  font-size: 1.5rem;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .book-next {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .book-next i {
+  font-size: 1.5rem;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .swiper-slide {
+  height: unset !important;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .icon {
+  display: flex;
+  position: relative;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .icon::after {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  background-color: white;
+  z-index: 0;
+  border-radius: 10px 10px 0 0;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .icon img {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 25%;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .book-text {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
+  flex-grow: 1;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .book-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+  width: 80%;
+  margin: 0 auto 3rem;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .book-text h3 {
+  font-family: "portada", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-family: "portadabold", serif;
+  margin: auto auto 2rem;
+  width: 70%;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .book-text p {
+  font-family: "portada", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-size: 1rem;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .book-text .read-more {
+  margin: 0 -1rem;
+  background-color: #FCFAF5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .book-text .read-more i {
+  margin: 0 auto 0 1rem;
+  align-self: center;
+}
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .book-text .read-more p {
+  font-family: "portada", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-family: "portadabold", serif;
+  margin-bottom: 0;
+  margin-left: auto;
+  align-self: center;
+}
+html body .main-videos .banner-libraries {
+  position: relative;
+}
+html body .main-videos .banner-libraries .menu {
+  padding: 1rem 0;
+}
+html body .main-videos .banner-libraries .menu .libraries {
+  padding-bottom: 4rem;
+  margin: auto;
+}
+html body .main-videos .banner-libraries .menu .libraries h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+}
+@media (min-width: 1400px) {
+  html body .main-videos .banner-libraries .menu .libraries {
+    width: 90%;
+  }
+}
+html body .main-videos .banner-libraries .menu .libraries .row-libraries .col-library {
+  margin: 0 auto 2rem;
+}
+html body .main-videos .banner-libraries .menu .libraries .row-libraries .col-library .content-library {
+  background-color: white;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  display: flex;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+html body .main-videos .banner-libraries .menu .libraries .row-libraries .col-library .content-library:hover {
+  background-color: #D8A73C;
+}
+html body .main-videos .banner-libraries .menu .libraries .row-libraries .col-library .content-library .icon {
+  align-self: center;
+  width: 40%;
+  margin-left: auto;
+}
+html body .main-videos .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts {
+  width: 55%;
+  align-self: center;
+}
+html body .main-videos .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts h4 {
+  font-family: "portadabold", serif;
+  color: black;
+}
+html body .main-videos .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts p {
+  font-family: "portadabold", serif;
+  margin-bottom: 0;
+  color: black;
+}
+html body .main-videos .banner-libraries .menu .libraries .row-libraries .col-library .active {
+  background-color: #D8A73C;
+}
+html body .main-videos .banner-libraries .menu .libraries {
+  padding-bottom: 0;
+}
+html body .main-videos .banner-libraries .libraries-banner .banner-img img {
+  width: 100%;
+}
+html body .main-videos .banner-libraries .videos .videos-swiper {
+  margin: auto;
+}
+@media (min-width: 1400px) {
+  html body .main-videos .banner-libraries .videos .videos-swiper {
+    width: 90%;
+  }
+}
+html body .main-videos .banner-libraries .videos .videos-swiper .video-row .col-video video,
+html body .main-videos .banner-libraries .videos .videos-swiper .video-row .col-video iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+html body .main-videos .banner-libraries .videos .videos-swiper .video-row .col-data {
+  margin: auto;
+}
+html body .main-videos .banner-libraries .videos .videos-swiper .video-row .col-data h1 {
+  font-family: "portadabold", serif;
+  line-height: 1.5;
+}
+html body .main-videos .banner-libraries .videos .videos-swiper .video-row .col-data h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+  font-family: "portada", serif;
+  text-align: start;
+  line-height: 1.5;
+}
+html body .main-videos .banner-libraries .thumb-videos .thumb-videos-swiper .thumb-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+html body .main-videos .banner-libraries .background-section {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+html body .main-videos .banner-libraries .background-section .background {
+  width: 100%;
+  height: 100%;
+}
+html body .main-videos .banner-libraries .background-section .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body .main-videos .section-1 {
+  padding: 4rem 0;
+}
+html body .main-videos .section-1 .top-img img {
+  width: 100%;
+}
+html body .main-voices .banner-libraries {
+  position: relative;
+}
+html body .main-voices .banner-libraries .menu {
+  padding: 1rem 0;
+}
+html body .main-voices .banner-libraries .menu .libraries {
+  padding-bottom: 4rem;
+  margin: auto;
+}
+html body .main-voices .banner-libraries .menu .libraries h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+}
+@media (min-width: 1400px) {
+  html body .main-voices .banner-libraries .menu .libraries {
+    width: 90%;
+  }
+}
+html body .main-voices .banner-libraries .menu .libraries .row-libraries .col-library {
+  margin: 0 auto 2rem;
+}
+html body .main-voices .banner-libraries .menu .libraries .row-libraries .col-library .content-library {
+  background-color: white;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  display: flex;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+html body .main-voices .banner-libraries .menu .libraries .row-libraries .col-library .content-library:hover {
+  background-color: #D8A73C;
+}
+html body .main-voices .banner-libraries .menu .libraries .row-libraries .col-library .content-library .icon {
+  align-self: center;
+  width: 40%;
+  margin-left: auto;
+}
+html body .main-voices .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts {
+  width: 55%;
+  align-self: center;
+}
+html body .main-voices .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts h4 {
+  font-family: "portadabold", serif;
+  color: black;
+}
+html body .main-voices .banner-libraries .menu .libraries .row-libraries .col-library .content-library .texts p {
+  font-family: "portadabold", serif;
+  margin-bottom: 0;
+  color: black;
+}
+html body .main-voices .banner-libraries .menu .libraries .row-libraries .col-library .active {
+  background-color: #D8A73C;
+}
+html body .main-voices .banner-libraries .menu .libraries {
+  padding-bottom: 0;
+}
+html body .main-voices .banner-libraries .voices-banner .col-images {
+  margin-right: auto;
+  padding: 0;
+}
+html body .main-voices .banner-libraries .voices-banner .col-images .img-div img {
+  width: 100%;
+}
+html body .main-voices .banner-libraries .voices-banner .col-slider {
+  padding: 0;
+  display: flex;
+}
+html body .main-voices .banner-libraries .voices-banner .col-slider .voices-banner-slider {
+  align-self: self-end;
+}
+html body .main-voices .banner-libraries .voices-banner .col-slider .voices-banner-slider .slide-img img {
+  width: 100%;
+}
+html body .main-voices .banner-libraries .background-section {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+html body .main-voices .banner-libraries .background-section .background {
+  width: 100%;
+  height: 100%;
+}
+html body .main-voices .banner-libraries .background-section .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 html body footer {
   background-color: #D8A73C;

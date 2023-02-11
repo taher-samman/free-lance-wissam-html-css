@@ -50,5 +50,51 @@
         }
       });
     }
+
+    if ($('.voices-banner-slider').length) {
+      new Swiper('.voices-banner-slider', {
+        loop: true,
+        slidesPerView: 1,
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+        autoplay: {
+          delay: 1000
+        }
+      });
+    }
+
+    if ($('.videos-swiper').length) {
+      var thumbVideosSwiper = new Swiper(".thumb-videos-swiper", {
+        spaceBetween: 10,
+        freeMode: true,
+        watchSlidesProgress: true,
+        slidesPerView: 1.5,
+        breakpoints: {
+          768: {
+            slidesPerView: 2.5
+          },
+          991: {
+            slidesPerView: 3.5
+          },
+          1200: {
+            slidesPerView: 4.5
+          },
+          1400: {
+            slidesPerView: 5.5
+          }
+        }
+      });
+      var videosSwiper = new Swiper(".videos-swiper", {
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+        thumbs: {
+          swiper: thumbVideosSwiper
+        }
+      });
+    }
   });
 })(jQuery);

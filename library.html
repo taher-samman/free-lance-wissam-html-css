@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/lib/bootstrap5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/lib/fontawesome5/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/lib/swiperjs/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Wissam</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="header-container container-fluid">
+                <a class="navbar-brand logo" href="./index.html">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="menu-list navbar-nav flex-grow-1 p-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item brown-dropdown" data-bs-toggle="collapse" href="#submenu-collapse"
+                            role="button" aria-expanded="false" aria-controls="submenu-collapse">
+                            <a class="nav-link" href="#">
+                                عن فضيلة الشيخ
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="collapse brown-dropdown-div" id="submenu-collapse">
+                                <ul class="navbar-nav brown-dropdown-menu justify-content-center p-0">
+                                    <li>
+                                        <a class="dropdown-item" href="#">فضيلة العلامة الشيخ محمد عوامة</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">الدكتور الشيخ أحمد عوامة</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">الدكتور محيي الدين عوامة</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">شهادة علماء عصره فيه</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./library.html">
+                                المكتبة
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                الأنشطة
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                المؤسسات الشريكة
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="search-form d-flex justify-content-center">
+                        <input class="input-search" type="search" placeholder="ما الموضوع الذي تريد البحث عنه؟"
+                            aria-label="ما الموضوع الذي تريد البحث عنه؟" />
+                        <button class="btn btn-search" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="social-media d-flex justify-content-center">
+                        <span class="connect">تواصل معنا</span>
+                        <a href="">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-libraries">
+        <section class="banner-libraries">
+            <div class="menu">
+                <div class="container-fluid">
+                    <div class="content libraries">
+                        <div class="row row-libraries">
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-library">
+                                <a href="./library.html" class="active content-library">
+                                    <div class="icon">
+                                        <img src="./assets/images/library-1.svg" alt="Library 1">
+                                    </div>
+                                    <div class="texts">
+                                        <h4>الكتب</h4>
+                                        <p>1237 كتاب</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-library">
+                                <a href="#" class="content-library">
+                                    <div class="icon">
+                                        <img src="./assets/images/library-1.svg" alt="Library 1">
+                                    </div>
+                                    <div class="texts">
+                                        <h4>الدراسات</h4>
+                                        <p>1237 دراسة</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-library">
+                                <a href="#" class="content-library">
+                                    <div class="icon">
+                                        <img src="./assets/images/library-1.svg" alt="Library 1">
+                                    </div>
+                                    <div class="texts">
+                                        <h4>أبحاث مستخلصة</h4>
+                                        <p>1237 بحث</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-library">
+                                <a href="#" class="content-library">
+                                    <div class="icon">
+                                        <img src="./assets/images/library-1.svg" alt="Library 1">
+                                    </div>
+                                    <div class="texts">
+                                        <h4>محاضرات</h4>
+                                        <p>1237 محاضرة</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-library">
+                                <a href="./videos.html" class="content-library">
+                                    <div class="icon">
+                                        <img src="./assets/images/library-1.svg" alt="Library 1">
+                                    </div>
+                                    <div class="texts">
+                                        <h4>مرئيات</h4>
+                                        <p>1237 برنامج</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-library">
+                                <a href="./voices.html" class="content-library">
+                                    <div class="icon">
+                                        <img src="./assets/images/library-1.svg" alt="Library 1">
+                                    </div>
+                                    <div class="texts">
+                                        <h4>صوتيات</h4>
+                                        <p>1237 مقطع</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container libraries-banner">
+                <div class="banner-img">
+                    <img src="./assets/images/ketob.png" alt="Ketob">
+                </div>
+            </div>
+            <div class="background-section">
+                <div class="background">
+                    <img src="./assets/images/libraries-background.jpg" alt="Background">
+                </div>
+            </div>
+        </section>
+        <section class="section-1">
+            <div class="top-img">
+                <img src="./assets/images/afterbannerhomepage.svg" alt="Img">
+            </div>
+            <div class="content">
+                <h1>لائحة بجميع الكتب</h1>
+                <div class="container books">
+                    <h2>كتب التفسير</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>كتب الحديث</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>كتب أصول</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>اللغة العربية</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>السيرة و الشمائل</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>التراجم</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>كتب منهجية</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>كتب تربوية</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>كتب التاريخ</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+                <div class="container books">
+                    <h2>شبهات وردود</h2>
+                    <div class="books-swiper swiper">
+                        <div class="swiper-wrapper books-swiper-grid">
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book1">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book2">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="book-content" data-bs-toggle="modal" data-bs-target="#book3">
+                                    <div class="icon">
+                                        <img src="./assets/images/book1.PNG" alt="Book Icon">
+                                    </div>
+                                    <div class="book-text">
+                                        <h2>كتاب قطوف شعرية</h2>
+                                        <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                        <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                            التعريف أو وصف أو ما يكتب على
+                                            غلاف
+                                            الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر
+                                            عن التعريف أو وصف أو ما يكتب
+                                            على غلاف الكتاب</p>
+                                        <div class="read-more">
+                                            <i class="fas fa-book-reader"></i>
+                                            <p>قراءة المزيد</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-prev"><i class="far fa-arrow-alt-circle-left"></i></div>
+                        <div class="book-next"><i class="far fa-arrow-alt-circle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container container-footer">
+            <div class="footer-logo">
+                <img src="./assets/images/logo-footer.svg" alt="Footer Logo">
+            </div>
+            <div class="row footer-row">
+                <div class="col-md-6 col-menus">
+                    <div class="row">
+                        <div class="col-6 col-sm-4">
+                            <ul>
+                                <li class="list-style-none">
+                                    <a href="">الصفحة الرئيسية</a>
+                                </li>
+                                <li class="list-style-none">
+                                    <a href="">عن فضيلة الشيخ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" col-6 col-sm-4">
+                            <ul>
+                                <li class="list-style-none">
+                                    <a href="">المكتبة</a>
+                                </li>
+                                <li>
+                                    <a href="">الكتب</a>
+                                </li>
+                                <li>
+                                    <a href="">الدراسات</a>
+                                </li>
+                                <li>
+                                    <a href="">أبحاث مستخلصة</a>
+                                </li>
+                                <li>
+                                    <a href="">محاضرات</a>
+                                </li>
+                                <li>
+                                    <a href="./videos.html">مرئيات</a>
+                                </li>
+                                <li>
+                                    <a href="./voices.html">صوتيات</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <ul>
+                                <li class="list-style-none">
+                                    <a href="">الأنشطة</a>
+                                </li>
+                                <li class="list-style-none">
+                                    <a href="">المؤسسات الشريكة</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-contact">
+                    <div class="contact-icon">
+                        <img src="./assets/images/email-icon.svg" alt="Email Icon">
+                        <p>للانضمام لقائمتنا البريدية و متابعة كل جديد</p>
+                    </div>
+                    <form action="" method="post" class="f-c-form">
+                        <input type="text" placeholder="someone@gmail.com" class="f-c-email">
+                        <button type="submit" class="f-c-submit">التسجيل</button>
+                    </form>
+                    <div class="social-media d-flex justify-content-center">
+                        <span class="connect">تواصل معنا</span>
+                        <a href="">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="terms">
+            <p>جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+    <div class="modal book1-modal fade" id="book1" tabindex="-1" aria-labelledby="book1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-modal">
+                        <div class="col-lg-3">
+                            <div class="book-img">
+                                <img src="./assets/images/modal-book1.PNG" alt="Book Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="content">
+                                <h2>قطوف شعرية</h2>
+                                <div class="downloads"></div>
+                                <h3>جمعها و رتبها الدكتور محيي الدين محمد عوامة</h3>
+                                <p>نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن التعريف أو وصف أو
+                                    ما يكتب على غلاف
+                                    الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن التعريف
+                                    أو وصف أو ما يكتب
+                                    على غلاف الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                    التعريف أو وصف أو
+                                    ما يكتب على غلاف الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص
+                                    مختصر عن التعريف أو
+                                    وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف
+                                    الكتاب. نص مختصر عن
+                                    التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على
+                                    غلاف الكتاب. نص
+                                    مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن التعريف أو وصف أو ما
+                                    يكتب على غلاف
+                                    الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن التعريف
+                                    أو وصف أو ما يكتب
+                                    على غلاف الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب. نص مختصر عن
+                                    التعريف أو وصف أو
+                                    ما يكتب على غلاف الكتاب. نص مختصر عن التعريف أو وصف أو ما يكتب على غلاف الكتاب</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex">
+                            <div class="modal-video mt-auto">
+                                <iframe src="https://www.youtube.com/embed/hsQOkHO1PNw"
+                                    title="ملخص مباراة برشلونة و ارسنال 4 - 1 ◄تشامبيونز ليج 2010 بتعليق  الشوالي"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book2" tabindex="-1" aria-labelledby="book2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="book3" tabindex="-1" aria-labelledby="book3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/lib/swiperjs/swiper-bundle.min.js"></script>
+    <script src="./assets/lib/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -68,6 +68,10 @@ $grey:#F5F5F5;
                         }
                     }
                 }
+
+                .active {
+                    background-color: $brown;
+                }
             }
         }
     }
@@ -375,8 +379,8 @@ html {
             position: fixed;
         }
 
-        main {
-            padding-top: .3rem;
+        .main-home {
+            // padding-top: .3rem;
 
             .banner {
                 .home-page-swiper {
@@ -534,6 +538,243 @@ html {
                     .partner {
                         img {
                             width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-libraries {
+            .banner-libraries {
+                position: relative;
+
+                .menu {
+                    padding: 1rem 0;
+                    @include libraries();
+
+                    .libraries {
+                        padding-bottom: 0;
+                    }
+                }
+
+                .libraries-banner {
+                    .banner-img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .background-section {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+
+                    .background {
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+
+            .section-1 {
+                padding: 1rem 0;
+
+                .top-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .content {
+                    padding: 2rem 0;
+
+                    h1 {
+                        font-family: $portadabold;
+                        text-align: center;
+                    }
+
+                    .books {
+                        padding: 2rem 0;
+
+                        h2 {
+                            @include h2Style();
+                            text-align: start;
+                        }
+
+                        @include books();
+                    }
+                }
+            }
+        }
+
+        .main-videos {
+            .banner-libraries {
+                position: relative;
+
+                .menu {
+                    padding: 1rem 0;
+                    @include libraries();
+
+                    .libraries {
+                        padding-bottom: 0;
+                    }
+                }
+
+                .libraries-banner {
+                    .banner-img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .videos {
+                    .videos-swiper {
+                        margin: auto;
+
+                        @media (min-width: 1400px) {
+                            width: 90%;
+                        }
+
+                        .video-row {
+                            .col-video {
+
+                                video,
+                                iframe {
+                                    width: 100%;
+                                    border-radius: 10px;
+                                }
+                            }
+
+                            .col-data {
+                                margin: auto;
+
+                                h1 {
+                                    font-family: $portadabold;
+                                    line-height: 1.5;
+                                }
+
+                                h2 {
+                                    @include h2Style();
+                                    font-family: $portada;
+                                    text-align: start;
+                                    line-height: 1.5;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .thumb-videos {
+                    .thumb-videos-swiper {
+                        .thumb-img {
+                            img {
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .background-section {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+
+                    .background {
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+
+            .section-1 {
+                padding: 4rem 0;
+
+                .top-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .main-voices {
+            .banner-libraries {
+                position: relative;
+
+                .menu {
+                    padding: 1rem 0;
+                    @include libraries();
+
+                    .libraries {
+                        padding-bottom: 0;
+                    }
+                }
+
+                .voices-banner {
+                    .col-images {
+                        margin-right: auto;
+                        padding: 0;
+
+                        .img-div {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .col-slider {
+                        padding: 0;
+                        display: flex;
+
+                        .voices-banner-slider {
+                            align-self: self-end;
+
+                            .slide-img {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .background-section {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+
+                    .background {
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
                         }
                     }
                 }
