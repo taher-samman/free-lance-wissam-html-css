@@ -9,6 +9,7 @@
 html {
   direction: rtl;
   font-size: 15px;
+  height: 100%;
 }
 @media (max-width: 1500px) {
   html {
@@ -31,6 +32,11 @@ html a {
 }
 html .list-style-none {
   list-style-type: none;
+}
+html body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 html body header {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1056,8 +1062,90 @@ html body .main-single-page .section-histories .histories .history .row-histroy 
   font-size: 1.2rem;
   text-align: right;
 }
+html body .main-single-page-slider {
+  background-image: url("../images/libraries-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+html body .main-single-page-slider .slider {
+  padding: 4rem 0;
+}
+html body .main-single-page-slider .slider .swiper-slide {
+  padding: 2rem;
+}
+html body .main-single-page-slider .slider .alama-swiper .slide-img {
+  width: 95%;
+  margin: 0 auto 4rem;
+}
+html body .main-single-page-slider .slider .alama-swiper .slide-img img {
+  width: 100%;
+}
+html body .main-single-page-slider .slider .alama-swiper .swiper-pagination {
+  position: initial;
+}
+html body .main-single-page-slider .slider .alama-swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+}
+html body .main-single-page-slider .slider .alama-swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: black;
+}
+html body .main-single-page-slider .slider .alama-swiper .slide-text {
+  padding: 2rem 4rem;
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  position: relative;
+}
+html body .main-single-page-slider .slider .alama-swiper .slide-text .fa-quote-right.before {
+  position: absolute;
+  padding: 0 0.5rem;
+  top: 0%;
+  right: 0%;
+  font-size: 5rem;
+  transform: translateY(-50%);
+}
+html body .main-single-page-slider .slider .alama-swiper .slide-text .fa-quote-right.after {
+  position: absolute;
+  padding: 0 0.5rem;
+  bottom: 0%;
+  left: 0%;
+  font-size: 5rem;
+  transform: translateY(50%) rotate(180deg);
+}
+html body .main-single-page-slider .slider .alama-swiper .slide-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+  margin-bottom: 0;
+}
+html body .main-single-page-slider .slider .alama-swiper .book-prev {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+html body .main-single-page-slider .slider .alama-swiper .book-prev i {
+  font-size: 2rem;
+}
+html body .main-single-page-slider .slider .alama-swiper .book-next {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+html body .main-single-page-slider .slider .alama-swiper .book-next i {
+  font-size: 2rem;
+}
 html body footer {
   background-color: #D8A73C;
+  margin-top: auto;
 }
 html body footer .container-footer {
   padding-top: 2rem;

@@ -59,6 +59,25 @@
                 },
             });
         }
+        if ($('.alama-swiper').length) {
+            new Swiper('.alama-swiper', {
+                loop: true,
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.book-prev',
+                    prevEl: '.book-next',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                // effect: 'fade',
+                // fadeEffect: {
+                //     crossFade: true
+                // },
+            });
+        }
         if ($('.videos-swiper').length) {
             var thumbVideosSwiper = new Swiper(".thumb-videos-swiper", {
                 spaceBetween: 10,
