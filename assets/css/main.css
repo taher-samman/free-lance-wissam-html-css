@@ -94,6 +94,9 @@ html body header nav .header-container .menu-list .brown-dropdown .brown-dropdow
   text-align: center;
   padding: 1rem;
 }
+html body header nav .header-container .menu-list .brown-dropdown .brown-dropdown-div .brown-dropdown-menu .dropdown-item:active {
+  background-color: #D8A73C;
+}
 html body header nav .header-container .search-form {
   padding: 1rem 0;
 }
@@ -374,8 +377,8 @@ html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .
   display: flex;
   position: relative;
 }
-html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .icon::after {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .icon::before {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   display: block;
   content: "";
   width: 100%;
@@ -387,14 +390,26 @@ html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .
   z-index: 0;
   border-radius: 10px 10px 0 0;
 }
+html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .icon::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  transform: translateY(50%);
+  background-color: white;
+  z-index: 1;
+}
 html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .icon img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0 auto;
   max-width: 25%;
 }
 html body .main-home .section-3 .books-swiper .books-swiper-grid .book-content .book-text {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   flex-grow: 1;
   cursor: pointer;
   background-color: white;
@@ -601,8 +616,8 @@ html body .main-libraries .section-1 .content .books .books-swiper .books-swiper
   display: flex;
   position: relative;
 }
-html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .icon::after {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .icon::before {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   display: block;
   content: "";
   width: 100%;
@@ -614,14 +629,26 @@ html body .main-libraries .section-1 .content .books .books-swiper .books-swiper
   z-index: 0;
   border-radius: 10px 10px 0 0;
 }
+html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .icon::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  transform: translateY(50%);
+  background-color: white;
+  z-index: 1;
+}
 html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .icon img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0 auto;
   max-width: 25%;
 }
 html body .main-libraries .section-1 .content .books .books-swiper .books-swiper-grid .book-content .book-text {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px -2px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   flex-grow: 1;
   cursor: pointer;
   background-color: white;
@@ -876,6 +903,11 @@ html body .main-voices .banner-libraries .background-section {
   height: 100%;
   z-index: -1;
 }
+@media (min-width: 991px) {
+  html body .main-voices .banner-libraries .background-section {
+    height: unset;
+  }
+}
 html body .main-voices .banner-libraries .background-section .background {
   width: 100%;
   height: 100%;
@@ -884,6 +916,145 @@ html body .main-voices .banner-libraries .background-section .background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+html body .main-voices .voices {
+  padding: 3rem 0;
+}
+html body .main-voices .voices .voice {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 2rem;
+}
+html body .main-voices .voices .voice h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+html body .main-voices .voices .voice .toolbar {
+  display: flex;
+}
+html body .main-voices .voices .voice .toolbar i {
+  color: #D8A73C;
+  font-size: 2.5rem;
+  align-self: center;
+  padding-left: 1rem;
+}
+html body .main-voices .voices .voice .toolbar .voice-cicle {
+  flex-grow: 1;
+}
+html body .main-voices .voices .voice .toolbar .voice-cicle img {
+  width: 100%;
+}
+html body .main-voices .voices .voice-full .toolbar i {
+  color: black;
+}
+html body .main-single-page .banner-libraries {
+  position: relative;
+  padding: 4rem 0;
+}
+html body .main-single-page .banner-libraries .single-banner .col-name {
+  display: flex;
+}
+html body .main-single-page .banner-libraries .single-banner .col-name .name {
+  align-self: center;
+  text-align: end;
+  width: 100%;
+}
+html body .main-single-page .banner-libraries .single-banner .col-name .name img {
+  width: 80%;
+}
+html body .main-single-page .banner-libraries .single-banner .col-images {
+  margin-right: auto;
+  padding: 0;
+}
+html body .main-single-page .banner-libraries .single-banner .col-images .img-div img {
+  width: 100%;
+}
+html body .main-single-page .banner-libraries .single-banner .col-slider {
+  padding: 0;
+  display: flex;
+}
+html body .main-single-page .banner-libraries .single-banner .col-slider .voices-banner-slider {
+  align-self: self-end;
+}
+html body .main-single-page .banner-libraries .single-banner .col-slider .voices-banner-slider .slide-img img {
+  width: 100%;
+}
+html body .main-single-page .banner-libraries .background-section {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+html body .main-single-page .banner-libraries .background-section .background {
+  width: 100%;
+  height: 100%;
+}
+html body .main-single-page .banner-libraries .background-section .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body .main-single-page .section-histories {
+  padding: 4rem 0;
+}
+html body .main-single-page .section-histories .histories .history h2 {
+  text-align: center;
+  font-family: "portadabold", serif;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+html body .main-single-page .section-histories .histories .history .row-histroy .col-right {
+  border-left: 1px solid black;
+  position: relative;
+}
+html body .main-single-page .section-histories .histories .history .row-histroy .col-right::before {
+  content: "";
+  display: block;
+  background-color: black;
+  border-radius: 100%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(calc(-50% - 1px), -50%);
+}
+html body .main-single-page .section-histories .histories .history .row-histroy .col-left {
+  border-right: 1px solid black;
+  position: relative;
+}
+html body .main-single-page .section-histories .histories .history .row-histroy .col-left::before {
+  content: "";
+  display: block;
+  background-color: black;
+  border-radius: 100%;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(calc(50% + 1px), 50%);
+}
+html body .main-single-page .section-histories .histories .history .row-histroy .col-right p {
+  font-family: "portada", serif;
+  font-size: 1.2rem;
+  text-align: left;
+}
+html body .main-single-page .section-histories .histories .history .row-histroy .col-left p {
+  margin-bottom: 0;
+  padding: 0.5rem 0;
+  font-family: "portada", serif;
+  font-size: 1.2rem;
+  text-align: right;
 }
 html body footer {
   background-color: #D8A73C;
@@ -990,24 +1161,69 @@ html body footer .terms p {
   line-height: 2;
   margin-bottom: 0;
 }
-html body .book1-modal .modal-content .modal-header {
+html body .book-modal .modal-content .modal-header {
   border: none;
 }
-html body .book1-modal .modal-content .modal-header .btn-close {
+html body .book-modal .modal-content .modal-header .btn-close {
   margin-left: 0;
   margin-right: auto;
 }
-html body .book1-modal .modal-content .modal-body .row-modal .book-img {
+html body .book-modal .modal-content .modal-body .row-modal .book-img {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+html body .book-modal .modal-content .modal-body .row-modal .book-img img {
+  width: 50%;
+}
+@media (min-width: 991px) {
+  html body .book-modal .modal-content .modal-body .row-modal .book-img img {
+    width: 100%;
+  }
+}
+html body .book-modal .modal-content .modal-body .row-modal .downloads a {
+  display: flex;
+  background-color: #FCFAF5;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  font-family: "portadabold", serif;
+  color: black;
+}
+html body .book-modal .modal-content .modal-body .row-modal .downloads a i {
+  align-self: center;
+  padding-left: 0.5rem;
+}
+html body .book-modal .modal-content .modal-body .row-modal .content h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "portadabold", serif;
+  margin-bottom: 3rem;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+html body .book-modal .modal-content .modal-body .row-modal .content h3 {
+  font-size: 1.5rem;
+  font-family: "portadabold", serif;
+  margin-bottom: 1rem;
+}
+html body .book-modal .modal-content .modal-body .row-modal .content p {
+  font-family: "portada", serif;
+  font-size: 1rem;
+}
+html body .book-modal .modal-content .modal-body .row-modal .modal-video {
   width: 100%;
 }
-html body .book1-modal .modal-content .modal-body .row-modal .book-img img {
-  width: 100%;
-}
-html body .book1-modal .modal-content .modal-body .row-modal .modal-video {
-  width: 100%;
-}
-html body .book1-modal .modal-content .modal-body .row-modal .modal-video video,
-html body .book1-modal .modal-content .modal-body .row-modal .modal-video iframe {
+html body .book-modal .modal-content .modal-body .row-modal .modal-video video,
+html body .book-modal .modal-content .modal-body .row-modal .modal-video iframe {
   width: 100%;
   border-radius: 1rem;
+}
+html body .book2 .modal-body .row-modal .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html body .book2 .modal-body .row-modal .content .downloads {
+  margin-top: auto;
 }
